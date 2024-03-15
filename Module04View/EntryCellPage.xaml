@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module04View.EntryCellPage"
+             Title="Q &amp; A">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="Q &amp; A Time!">
+                        
+                        <EntryCell 
+                            Label="Who is the main character in Toy Story?" 
+                            x:Name="question1"/>
+                        
+                        <EntryCell 
+                            Label="What is Buzz Lightyear's famous catchphrase?"
+                            x:Name="question2"/>
+
+                        <EntryCell 
+                            Label="Who is the owner of the toys in Toy Story?"
+                            x:Name="question3"/>
+
+                        <EntryCell 
+                            Label="What is the name of the daycare center in Toy Story 3?"
+                            x:Name="question4"/>
+
+                        <EntryCell 
+                            Label="How many Toy Story movies are there in total?"
+                            x:Name="question5"/>
+
+                        <EntryCell 
+                            Label="What is the name of the cowboy doll who is Woody's love interest?"
+                            x:Name="question6"/>
+
+                        <EntryCell 
+                            Label="What is the name of the space-themed restaurant in Toy Story?"
+                            x:Name="question7"/>
+
+                        <EntryCell 
+                            Label="What is the name of Andy's dog in Toy Story?"
+                            x:Name="question8"/>
+                        
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+            <Button Text="Submit" Clicked="OnSubmitEntry"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

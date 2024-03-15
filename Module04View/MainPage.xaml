@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module04View.MainPage"
+             Title="KRISTINE ANGELIB. BASILIO">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Image Source="mainPage.png"
+               Aspect="AspectFill"/>
+
+        <Grid>
+            <Button Text="LIST OF CHARACTERS"
+                    Clicked="OnTextCellClicked"
+                    BackgroundColor="Gold"
+                    CornerRadius="20"/>
+            
+            <Button Text="CHARACTERS PROFILE"
+                    Clicked="OnImageCellClicked"
+                    BackgroundColor="Gold"
+                    CornerRadius="20"/>
+            
+            <Button Text="SCENES"
+                    Clicked="OnSwitchCellClicked"
+                    BackgroundColor="Gold"
+                    CornerRadius="20"/>
+            
+            <Button Text="Q &amp; A"
+                    Clicked="OnEntryCellClicked"
+                    BackgroundColor="Gold"
+                    CornerRadius="20"/>
+            
+            <Button Text="EXPLORE MOVIES"
+                    Clicked="OnCollectionViewClicked"
+                    BackgroundColor="Gold"
+                    CornerRadius="20"/>
+            
+            <Button Text="ABOUT"
+                    Clicked="OnAboutClicked"
+                    BackgroundColor="Red"
+                    CornerRadius="20"/>
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module04View.CollectionViewPage"
+             Title="Explore Disney Movies">
+    <ContentPage.Content>
+        <ScrollView Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal">
+                <CollectionView ItemsSource="{Binding DisneyMovies}" 
+                                HorizontalScrollBarVisibility="Always">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"
+                                         Span="1" />
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="5">
+                                <Image Source="{Binding Image}" 
+                                       Aspect="AspectFill" 
+                                       WidthRequest="150" />
+                                <Label Text="{Binding TitleYear}" 
+                                       FontAttributes="Bold" 
+                                       HorizontalTextAlignment="Center" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
